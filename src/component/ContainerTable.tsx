@@ -9,16 +9,16 @@ const ContainerTable = () => {
   
   return (
     <>
-        <div className='grid grid-cols-2 grid-rows-3 gap-2 '>
+        <div className='grid gap-2'>
             <div className='col-span-2 '>
                 <div >
                     <Buttons />
                 </div>
-                <div></div>
             </div>
             <StickyHeadTable />
-           <TableDataSell/>
+            <TableDataSell/>
            <div className='col-span-2 '>
+            <p className='text-gray-600'>TradeLog</p>
             <TradeLog/>
            </div>
         </div>

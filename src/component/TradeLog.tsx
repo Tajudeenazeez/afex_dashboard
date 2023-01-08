@@ -69,7 +69,7 @@ const rows = [
 export default function TradeLog() {
 
   return (
-    <Paper sx={{ width: '100%', overflow: 'hidden' }}>
+    <Paper  sx={{ width: '100%', overflow: 'hidden' }}>
       <TableContainer sx={{ maxHeight: 240 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>

@@ -15,12 +15,12 @@ interface Column {
 }
 
 const columns: readonly Column[] = [
-  { id: 'product', label: 'Product', minWidth: 70 },
+  { id: 'product', label: 'Product', minWidth: 40 },
   { id: 'quantity', label: 'Quantity', minWidth: 40 },
   {
     id: 'bidPrice',
     label: 'Bid Price',
-    minWidth: 90,
+    minWidth: 75,
     align: 'right',
   },
   { id: 'getBuy', minWidth: 40 },

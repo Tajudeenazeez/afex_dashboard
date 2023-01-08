@@ -3,7 +3,7 @@ import ButtonStyle from '../component/ButtonStyle'
 
 const Buttons = () => {
   return (
-    <div>
+    <div className='bg-white' >
       <ButtonStyle/>
         
     </div>
