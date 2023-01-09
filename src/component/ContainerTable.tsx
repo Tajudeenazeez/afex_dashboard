@@ -15,14 +15,13 @@ const ContainerTable = () => {
                     <Buttonstyle />
                 </div>
             </div>
-            <div className='mt-[4.8rem]'>
+            <div className='mt-[8.1rem] border-2 mb-4 '>
               <StickyHeadTable />
             </div>
-            <div className='mt-[4.8rem]'>
+            <div className='mt-[8.1rem] border-2 mb-4'>
             <TableDataSell/>
             </div>
            <div className='col-span-2 '>
-            <p className='text-gray-600'>TradeLog</p>
             <TradeLog/>
            </div>
         </div>

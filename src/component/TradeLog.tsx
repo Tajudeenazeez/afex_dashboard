@@ -70,6 +70,7 @@ export default function TradeLog() {
       <TableContainer sx={{ maxHeight: 240 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
+          <p className='text-gray-600'>TradeLog</p>
             <TableRow>
               {columns.map((column) => (
                 <TableCell

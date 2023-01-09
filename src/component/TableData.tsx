@@ -46,7 +46,7 @@ function createData(
 const getBuy = (buy:string)=> {
   return (
   <>
-   <button className='w-[50px] h-[25px] text-xs  border-2 border-[#67a372] text-[#67a372]'>{buy}</button>
+   <button className='w-[4rem] h-[1.5rem] text-xs  border-2 border-[#67a372] text-[#67a372]'>{buy}</button>
 
   </>
 )}

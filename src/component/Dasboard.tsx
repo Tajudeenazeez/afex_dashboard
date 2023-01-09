@@ -17,12 +17,8 @@ const Dasboard = () => {
   },[])
   return (
     <div className='flex gap-2 mt-[42px]  border-2 border-gray-100'>
-      <div className='w-[6rem] grow-0'>
         <Sidebar/>
-      </div>
-      <div className='w-[11rem] grow-0'>
         <SidebarSub/>
-      </div>
       <div className='grow'>
         <ContainerTable/>
       </div>

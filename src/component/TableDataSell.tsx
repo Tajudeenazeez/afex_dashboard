@@ -45,7 +45,7 @@ function createData(
 const getSell = (sell:string)=> {
   return (
   <>
-   <button className='w-[50px] h-[25px] text-xs  border-2 border-red-500 text-red-500'>{sell}</button>
+   <button className='w-[4rem] h-[1.5rem] text-xs  border-2 border-red-500 text-red-500'>{sell}</button>
 
   </>
 )}
