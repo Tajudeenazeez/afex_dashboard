@@ -5,7 +5,7 @@ const Buttonstyle = () => {
   return (
    <>
    <div className='relative'>
-    <div className='flex flex-col pl-4 w-full h-[7.2rem] justify-center gap-2 fixed bg-white top-[3.99rem] z-8 '>
+    <div className='flex flex-col pl-4 w-full h-[7.2rem] justify-center gap-2 fixed bg-white top-[3.99rem] z-8 border-2 border-b-gray-10 '>
         <div className='flex gap-6  items-center ' >
           <p>Broad</p>
           <button className='bg-[#D71E0E] rounded-full text-white text-[0.88rem] leading-4 p-[0.6rem] w-[5.6rem] h-[2.25rem] '>x-Traded</button>

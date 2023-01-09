@@ -64,7 +64,12 @@ export default function StickyHeadTable() {
 
   return (
     <Paper className='hideme1 w-[100]'>
-      <TableContainer sx={{ maxHeight: 300 }}>
+      <TableContainer sx={{ 
+                            maxHeight: 300,
+                            "&::-webkit-scrollbar":{width:6,},
+                            "&::-webkit-scrollbar-track":{backgroundColor:'white'},
+                            "&::-webkit-scrollbar-thumb":{backgroundColor:'gray', borderRadus:2}
+                          }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow sx={{color:'#ff0000' }}>
@@ -82,9 +87,9 @@ export default function StickyHeadTable() {
           <TableBody>
             {rows
               // .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map((row) => {
+              .map((row, i) => {
                 return (
-                  <TableRow hover role="checkbox" tabIndex={-1} key={Math.random() + 1} >
+                  <TableRow hover role="checkbox" tabIndex={-1} key={i} >
                     {columns.map((column) => {
                       const value = row[column.id];
                       return (

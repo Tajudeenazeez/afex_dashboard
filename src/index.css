@@ -11,8 +11,20 @@
 
 .hideme .css-177gid-MuiTableCell-root{
   color: red !important;
+
 }
 
 .hideme1 .css-177gid-MuiTableCell-root{
     color: green !important;
+   
   }
+
+
+.hideme {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+.hideme1 {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}

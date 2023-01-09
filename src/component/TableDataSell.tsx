@@ -62,9 +62,14 @@ const rows = [
 export default function TableDataSell() {
 
   return (
-    <Paper className='hideme w-[100]'>
+    <Paper className='hideme w-[100] overflow-hidden'>
       {/* sx={{ width: '100%', overflow: 'hidden', }} */}
-      <TableContainer sx={{ maxHeight: 300 }}>
+      <TableContainer sx={{ 
+                            maxHeight: 300 , 
+                            "&::-webkit-scrollbar":{width:6,},
+                            "&::-webkit-scrollbar-track":{backgroundColor:'white'},
+                            "&::-webkit-scrollbar-thumb":{backgroundColor:'gray', borderRadus:2}
+                          }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow>
@@ -81,9 +86,9 @@ export default function TableDataSell() {
           </TableHead>
           <TableBody>
             {rows
-              .map((row) => {
+              .map((row,i) => {
                 return (
-                  <TableRow hover role="checkbox" tabIndex={-1} key={Math.random() + 1}>
+                  <TableRow hover role="checkbox" tabIndex={-1} key={i}>
                     {columns.map((column) => {
                       const value = row[column.id];
                       return (
