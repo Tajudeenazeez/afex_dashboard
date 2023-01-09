@@ -63,11 +63,11 @@ const rows = [
 export default function StickyHeadTable() {
 
   return (
-    <Paper sx={{ width: '100%', overflow: 'hidden',  }}>
+    <Paper className='hideme1 w-[100]'>
       <TableContainer sx={{ maxHeight: 300 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
-            <TableRow>
+            <TableRow sx={{color:'#ff0000' }}>
               {columns.map((column) => (
                 <TableCell
                   key={column.id}
@@ -84,12 +84,12 @@ export default function StickyHeadTable() {
               // .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map((row) => {
                 return (
-                  <TableRow hover role="checkbox" tabIndex={-1} key={Math.random() + 1}>
+                  <TableRow hover role="checkbox" tabIndex={-1} key={Math.random() + 1} >
                     {columns.map((column) => {
                       const value = row[column.id];
                       return (
                         <>
-                          <TableCell key={column.id} align={column.align}>
+                          <TableCell key={column.id} align={column.align} className='text-[red]'>
                           {value}
                         </TableCell>
                         </>

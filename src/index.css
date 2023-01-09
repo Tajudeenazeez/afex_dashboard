@@ -8,3 +8,11 @@
     font-size: 1rem;
 }
 
+
+.hideme .css-177gid-MuiTableCell-root{
+  color: red !important;
+}
+
+.hideme1 .css-177gid-MuiTableCell-root{
+    color: green !important;
+  }

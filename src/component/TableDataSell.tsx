@@ -62,7 +62,8 @@ const rows = [
 export default function TableDataSell() {
 
   return (
-    <Paper sx={{ width: '100%', overflow: 'hidden', }}>
+    <Paper className='hideme w-[100]'>
+      {/* sx={{ width: '100%', overflow: 'hidden', }} */}
       <TableContainer sx={{ maxHeight: 300 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
