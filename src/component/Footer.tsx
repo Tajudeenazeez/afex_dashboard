@@ -2,8 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='flex justify-between text-black text-[0.5rem]'>
-      <div className='bg-black text-white flex items-center px-5'>
+    <div >
+      <footer className='flex justify-between text-black text-[0.3rem]'>
+      <div className='bg-black text-white flex items-center px-5 text-[0.3rem]'>
         <p>Live Market</p>
       </div>
       <div>
@@ -49,7 +50,9 @@ const Footer = () => {
         <div className='flex items-center'>₦30,834.59</div>
       </div>
     </footer>
-  )
+
+    </div>
+      )
 }
 
 export default Footer

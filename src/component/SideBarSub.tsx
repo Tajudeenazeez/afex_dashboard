@@ -8,22 +8,22 @@ import { FaCheck } from 'react-icons/fa'
 
 const SidebarSub = () => {
   return (
-    <div className='w-[190px] h-[390px] bg-white  '>
-      <div className='flex items-center m-2  bg-gray-100 border-2 border-gray-300'>
-          <AiOutlineSearch size={20} className='text-gray-400' />
+    <div className='w-[11rem] h-[34.3rem] bg-white  ml-[5.9rem]'>
+      <div className='flex  items-center m-2  bg-gray-100 border-2 border-gray-300'>
+          <AiOutlineSearch size={20} className='text-gray-400 ' />
         <input
-          className=' focus:outline-none text-sm h-[32px] bg-gray-100  pl-[5px] box-border w-full'
+          className=' focus:outline-none text-sm h-[2rem] bg-gray-100  pl-[5px] box-border w-full'
           type='text'
           placeholder='Search'
         />
       </div>
       <nav>
-        <ul className='flex flex-col  text-gray-800 '>
-          <li className='text-xs py-4 flex items-center justify-evenly'>
+        <ul className='flex  flex-col  text-gray-800 '>
+          <li className='text-xs py-4 flex items-center justify-evenly '>
             <BiTrendingUp size={20}  />
             <p>Product View</p>
           </li>
-          <li className='text-xs py-4 flex items-center justify-evenly bg-gray-100 text-red-600'>
+          <li className='text-xs py-4 flex items-center justify-evenly bg-gray-200 text-red-600'>
             <RiSmartphoneLine size={20} />
             <p>Order Book</p>
           </li>

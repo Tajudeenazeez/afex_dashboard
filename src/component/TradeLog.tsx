@@ -6,9 +6,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import { red } from '@mui/material/colors';
 
-const color = red[500];
 
 interface Column {
   id: 'security' | 'board' | 'orderType' | 'matched_price'| 'quantity'| 'date' | 'time';

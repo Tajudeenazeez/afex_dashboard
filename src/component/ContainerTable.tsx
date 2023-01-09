@@ -1,5 +1,5 @@
 import React from 'react'
-import Buttons from './Buttons'
+import Buttonstyle from './ButtonStyle'
 import StickyHeadTable from './TableData'
 import TableDataSell from './TableDataSell'
 import TradeLog from './TradeLog'
@@ -9,14 +9,18 @@ const ContainerTable = () => {
   
   return (
     <>
-        <div className='grid gap-2'>
+        <div className='grid gap-1 '>
             <div className='col-span-2 '>
                 <div >
-                    <Buttons />
+                    <Buttonstyle />
                 </div>
             </div>
-            <StickyHeadTable />
+            <div className='mt-[4.8rem]'>
+              <StickyHeadTable />
+            </div>
+            <div className='mt-[4.8rem]'>
             <TableDataSell/>
+            </div>
            <div className='col-span-2 '>
             <p className='text-gray-600'>TradeLog</p>
             <TradeLog/>
